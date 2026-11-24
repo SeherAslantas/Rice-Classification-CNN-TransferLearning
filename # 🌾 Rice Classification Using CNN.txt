@@ -1,0 +1,89 @@
+# 🌾 Rice Classification Using CNN and VGG16
+
+## 📌 Project Overview
+
+Bu proje, farklı pirinç türlerinin görüntüler üzerinden otomatik olarak sınıflandırılmasını amaçlamaktadır.
+
+Çalışmada iki farklı derin öğrenme yaklaşımı uygulanmıştır:
+
+- Custom CNN
+- VGG16 Transfer Learning
+
+Geliştirilen modeller karşılaştırılmış ve kullanıcıların pirinç görüntülerini yükleyerek tahmin yapabilmesi için Streamlit tabanlı bir web uygulaması hazırlanmıştır.
+
+## 📊 Dataset
+
+Projede Kaggle üzerinde bulunan **Rice Image Dataset** kullanılmıştır.
+
+[Dataset Link](https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset)
+
+Veri setinde beş farklı pirinç türü bulunmaktadır:
+
+1. Arborio
+2. Basmati
+3. Ipsala
+4. Jasmine
+5. Karacadag
+
+## 🔍 Data Preprocessing
+
+Model eğitiminden önce görüntüler üzerinde aşağıdaki işlemler uygulanmıştır:
+
+- Görüntü boyutlandırma (64×64)
+- Piksel normalizasyonu
+- Sınıf etiketlerinin sayısal değerlere dönüştürülmesi
+
+## 🧠 Models
+
+### 1. Custom CNN
+
+Pirinç türlerini sınıflandırmak amacıyla özel bir CNN mimarisi geliştirilmiştir. Evrişim ve havuzlama katmanları kullanılarak görüntülerden özellik çıkarılması sağlanmıştır.
+
+### 2. VGG16 Transfer Learning
+
+Önceden eğitilmiş VGG16 mimarisinden yararlanılarak transfer öğrenme gerçekleştirilmiştir. Model beş pirinç türünü sınıflandıracak şekilde düzenlenmiştir.
+
+## 📈 Model Results
+
+CNN ve VGG16 modellerinin eğitim ve doğrulama sonuçları tamamlandığında bu bölüme eklenecektir.
+
+| Metric | Custom CNN | VGG16 |
+|---|---|---|
+| Training Accuracy | Eklenecek | Eklenecek |
+| Validation Accuracy | Eklenecek | Eklenecek |
+| Training Loss | Eklenecek | Eklenecek |
+| Validation Loss | Eklenecek | Eklenecek |
+
+## 🛠️ Technologies Used
+
+- Python
+- TensorFlow / Keras
+- CNN
+- VGG16
+- NumPy
+- Pandas
+- OpenCV
+- Matplotlib
+- Streamlit
+
+## 🌐 Web Application
+
+Streamlit tabanlı uygulama sayesinde kullanıcılar pirinç görüntüsü yükleyerek CNN veya VGG16 modelleriyle sınıflandırma tahmini alabilir.
+
+**Live Application:** Streamlit Community Cloud bağlantısı eklenecektir.
+
+## 📁 Project Files
+
+- `app.py` – Streamlit web uygulaması
+- `requirements.txt` – Gerekli Python kütüphaneleri
+- `riceimage.ipynb` – Veri analizi, model geliştirme ve eğitim
+- `riceModel.keras` – CNN modeli
+- `riceModelTL.keras` – VGG16 modeli
+- `CNN_Grafikleri (4).png` – CNN performans grafikleri
+- `VGG16_Grafikleri (3).png` – VGG16 performans grafikleri
+
+## 👩‍💻 Author
+
+**Seher Aslantaş**
+
+GitHub: [SeherAslantas](https://github.com/SeherAslantas)
